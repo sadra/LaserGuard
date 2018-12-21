@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{B08FD514-C40D-F3D4-2651-975E35708C26}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BackgroundScroller.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player.cs" Line="115" Column="1" />
+      <File FileName="Assets/Scripts/Shredder.cs" Line="3" Column="19" />
+      <File FileName="Assets/Scripts/EnemyPathing.cs" Line="21" Column="17" />
+      <File FileName="Assets/Scripts/WaveConfig.cs" Line="8" Column="45" />
+      <File FileName="Assets/Scripts/EnemySpawner.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/DamageDealer.cs" Line="18" Column="2" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="46" Column="92" />
+      <File FileName="Assets/Scripts/BackgroundScroller.cs" Line="7" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
