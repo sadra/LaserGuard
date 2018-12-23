@@ -1,14 +1,11 @@
 ﻿<Properties StartupConfiguration="{B08FD514-C40D-F3D4-2651-975E35708C26}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MusicPlayer.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="115" Column="1" />
+      <File FileName="Assets/Scripts/Level.cs" Line="24" Column="38" />
+      <File FileName="Assets/Scripts/Player.cs" Line="13" Column="43" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="12" Column="50" />
       <File FileName="Assets/Scripts/Shredder.cs" Line="3" Column="19" />
-      <File FileName="Assets/Scripts/EnemyPathing.cs" Line="21" Column="17" />
-      <File FileName="Assets/Scripts/WaveConfig.cs" Line="8" Column="45" />
-      <File FileName="Assets/Scripts/EnemySpawner.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/DamageDealer.cs" Line="18" Column="2" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="62" Column="23" />
-      <File FileName="Assets/Scripts/BackgroundScroller.cs" Line="7" Column="52" />
+      <File FileName="Assets/Scripts/MusicPlayer.cs" Line="10" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
