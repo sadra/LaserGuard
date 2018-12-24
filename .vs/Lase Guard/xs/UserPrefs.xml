@@ -1,5 +1,11 @@
 ﻿<Properties StartupConfiguration="{B08FD514-C40D-F3D4-2651-975E35708C26}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spinner.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player.cs" Line="11" Column="20" />
+      <File FileName="Assets/Scripts/Spinner.cs" Line="11" Column="53" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="35" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
