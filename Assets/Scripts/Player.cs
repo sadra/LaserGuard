@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 0.7f;
     [SerializeField] float upPadding = 3f;
-    [SerializeField] float health = 200;
+    [SerializeField] int health = 500;
     [SerializeField] AudioClip deathSound;
     [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
     [SerializeField] AudioClip shootSound;
@@ -42,7 +42,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         SetUpMoveBoundaries();
-        //StartCoroutine(PrintAndWait());
     }
 
     // Update is called once per frame
@@ -103,6 +102,11 @@ public class Player : MonoBehaviour
 
 
     //Health
+    public int GetHealth()
+    {
+        return health;
+    }
+
     private void OnTriggerEnter2D(Collider2D collisionOther)
     {
         DamageDealer damageDealer = collisionOther.gameObject.GetComponent<DamageDealer>();
@@ -116,6 +120,7 @@ public class Player : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
+            health = 0;
             Die();
         }
         else

@@ -1,13 +1,5 @@
 ﻿<Properties StartupConfiguration="{B08FD514-C40D-F3D4-2651-975E35708C26}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MusicPlayer.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Level.cs" Line="24" Column="38" />
-      <File FileName="Assets/Scripts/Player.cs" Line="13" Column="43" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="12" Column="50" />
-      <File FileName="Assets/Scripts/Shredder.cs" Line="3" Column="19" />
-      <File FileName="Assets/Scripts/MusicPlayer.cs" Line="10" Column="13" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
