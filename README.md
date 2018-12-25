@@ -6,6 +6,5 @@ The game developed with Unity3D.
 
 ## Demo
 
-[Play Block Breaker at simmer.io now](https://simmer.io/@sadra/blockbreaker)
+[Download Laser Guard from diawi.com now](https://webapp.diawi.com/install/KEjNoP)
 
-![Block Breaker](https://imgur.com/download/5suCvVy)
