@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{B08FD514-C40D-F3D4-2651-975E35708C26}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spinner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemySpawner.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="11" Column="20" />
-      <File FileName="Assets/Scripts/Spinner.cs" Line="11" Column="53" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="35" Column="1" />
+      <File FileName="Assets/Scripts/Level.cs" Line="20" Column="31" />
+      <File FileName="Assets/Scripts/GameSession.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemySpawner.cs" Line="6" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

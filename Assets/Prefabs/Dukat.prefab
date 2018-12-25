@@ -73,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0512df3419cee4e0392399e5933a6c6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6205b60bd755f42cbb2a77f965b58ebd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.93, y: 0.84}
+  m_Size: {x: 1.94, y: 1.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -120,7 +120,7 @@ MonoBehaviour:
   durationOfExplosion: 1
   deathSound: {fileID: 8300000, guid: 09560d14b27b044f7b10e31251f99c93, type: 3}
   deathSoundVolume: 0.75
-  shootSound: {fileID: 8300000, guid: 6cbbd74f857624b0f8f88ff9348fa30f, type: 3}
+  shootSound: {fileID: 8300000, guid: 85d6879d6550240a5a297fa8ac902b23, type: 3}
   shootSoundVolume: 0.5
 --- !u!58 &4838019672397246291
 CircleCollider2D:

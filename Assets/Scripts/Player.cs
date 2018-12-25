@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
-
     //Configuration Parameters
     [Header("Player Movement")]
     [SerializeField] float moveSpeed = 10f;
@@ -25,8 +25,13 @@ public class Player : MonoBehaviour
     [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
-    [SerializeField] float projectileFiringPeriod = 0.1f;
+    [SerializeField] float projectileFiringPeriod = 2f;
 
+    [Header("Control")]
+    [SerializeField] bool activeJoyStick = true;
+
+
+    protected Joystick joystick;
 
 
     Coroutine firingCoroutine;
@@ -42,6 +47,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         SetUpMoveBoundaries();
+        joystick = FindObjectOfType<Joystick>();
     }
 
     // Update is called once per frame
@@ -51,27 +57,40 @@ public class Player : MonoBehaviour
         Fire();
     }
 
+
     //Fire
     private void Fire()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Shoot"))
         {
-            firingCoroutine = StartCoroutine(Firecontinously());
+            firingCoroutine = StartCoroutine(FireContinuously());
         }
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("Shoot"))
         {
             StopCoroutine(firingCoroutine);
         }
     }
-     
-    IEnumerator Firecontinously()
+
+    public void FirepointerDown()
+    {
+        firingCoroutine = StartCoroutine(FireContinuously());
+    }
+
+
+    public void FirepointerUp()
+    {
+        StopCoroutine(firingCoroutine);
+    }
+
+
+    IEnumerator FireContinuously()
     {
         while (true)
         {
             GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
-            yield return new WaitForSeconds(projectileFiringPeriod);
             AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position, shootSoundVolume);
+            yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
 
@@ -79,8 +98,8 @@ public class Player : MonoBehaviour
     //Movement
     private void Move()
     {
-        var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+        var deltaX = (joystick.Horizontal + Input.GetAxis("Horizontal")) * Time.deltaTime * moveSpeed;
+        var deltaY = (joystick.Vertical + Input.GetAxis("Vertical")) * Time.deltaTime * moveSpeed;
 
         var newXPos = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
         var newYPos = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);

@@ -361,4 +361,3 @@
 /Users/sadra/Unity/Lase Guard/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/sadra/Unity/Lase Guard/obj/Debug/Assembly-CSharp.dll
 /Users/sadra/Unity/Lase Guard/obj/Debug/Assembly-CSharp.pdb
-/Users/sadra/Unity/Lase Guard/Temp/bin/Debug/UnityEngine.WebGLModule.dll
